@@ -1,0 +1,26 @@
+Setting for VS 2022
+
+// Add to VC++ Directories/Include Directories:
+C:\Library\SDL2_Lib\SDL2-2.26.2\include
+C:\Library\SDL2_Lib\SDL2_image-2.6.2\include
+C:\Library\SDL2_Lib\SDL2_mixer-2.6.2\include
+C:\Library\SDL2_Lib\SDL2_ttf-2.20.1\include
+
+// Add to VC++ Directories/Library Directories:
+C:\Library\SDL2_Lib\SDL2-2.26.2\lib\x64
+C:\Library\SDL2_Lib\SDL2_mixer-2.6.2\lib\x64
+C:\Library\SDL2_Lib\SDL2_ttf-2.20.1\lib\x64
+C:\Library\SDL2_Lib\SDL2_image-2.6.2\lib\x64
+
+// Add to Linker/Input/Additional Dependencies
+SDL2.lib
+SDL2main.lib
+SDL2_image.lib
+SDL2_mixer.lib
+SDL2_ttf.lib
+
+
+
+
+
+

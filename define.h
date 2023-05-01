@@ -1,0 +1,66 @@
+#ifndef DEFINE_H_INCLUDED
+#define DEFINE_H_INCLUDED
+#include "game.h"
+//Game
+#define SCREEN_WIDTH 800
+#define SCREEN_HEIGHT 600
+#define FPS 60
+#define MAX_KEYBOARD_KEYS 360
+#define ENEMY_SPAWN_TIMER FPS*2
+#define PLAYER_MAX_HEALTH 1000
+#define PLAYER_MAX_ENERGY 600
+//Words
+#define CHAR_HEIGHT 28
+#define CHAR_WIDTH 18
+//Projectile
+#define NOTRACKING 0
+#define TRACKING 1
+#define BULLET_SPEED 18
+#define DRONE_SPEED 6
+#define FIREBALL_SPEED 5
+//Entity
+#define PLAYER 0
+#define ENEMY 1
+#define PLAYER_SPEED 4
+#define MAX_WEAPON 2
+#define SWORD 0
+#define RIFLE 1
+//Map
+#define ARENA_WIDTH 100
+#define ARENA_HEIGHT 100
+#define ARENA_RENDER_WIDTH 25
+#define ARENA_RENDER_HEIGHT 20
+#define TILE_SIZE 32
+//Button
+#define MAX_BUTTON 3
+#define PLAY_BUTTON 0
+#define RETRY_BUTTON 1
+#define MENU_BUTTON 2
+#define BUTTON_WIDTH 160
+#define BUTTON_HEIGHT 40
+
+//Sound
+#define MAX_CHANNEL 8
+enum
+{
+	CH_ANY = -1,
+	CH_PLAYER,
+	CH_ENEMY,
+	CH_SYSTEM
+};
+
+enum
+{
+	SND_RIFLE_FIRE,
+	SND_SWORD_SLASH,
+	SND_DRONE_LAUNCH,
+	SND_ENEMY_DIE,
+	SND_PLAYER_HURT,
+	SND_HEAL,
+	SND_BUTTON_CLICK,
+	SND_ENEMY_FIRE,
+	SND_MAX
+};
+#endif // DEFINE_H_INCLUDED
+
+
